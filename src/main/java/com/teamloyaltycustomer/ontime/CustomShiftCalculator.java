@@ -42,8 +42,6 @@ public class CustomShiftCalculator {
                     }
                 }
                 if (i % 10000000 == 0) {
-                    // System.out.println("Worker " + rows + " -> " + String.format("%,d", i) + " of " +
-                    // String.format("%,.0f", tot)); 
                     System.out.println("Worker " + rows + " -> " + String.format("%,.5f", ((i / tot) * 100)) + "%. Processed "
                             + String.format("%,d", i) + " permutations.");
 
