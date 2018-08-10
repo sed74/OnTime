@@ -93,8 +93,6 @@ public class CustomShiftCalculator {
             totN = 0;
             daysCovered = 0;
             for (int j = 0; j < totRows; j++) {
-                // System.out.println(String.format("Checking cell %s,%s", Integer.toString(i),
-                // Integer.toString(j)));
 
                 if (shift[j][i].equalsIgnoreCase("M"))
                     totM++;
@@ -102,8 +100,6 @@ public class CustomShiftCalculator {
                     totP++;
                 if (shift[j][i].equalsIgnoreCase("N"))
                     totN++;
-
-                // System.out.println(String.format("M: %s - P: %s - N: %s", totM, totP, totN));
             }
             if (totM >= 2 && totP >= 2 && totN >= 2) {
                 daysCovered++;
