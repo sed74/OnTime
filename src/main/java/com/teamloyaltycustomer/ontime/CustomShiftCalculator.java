@@ -125,7 +125,8 @@ public class CustomShiftCalculator {
         if (printToFilw) {
             BufferedWriter writer;
             try {
-                writer = new BufferedWriter(new FileWriter("C:\\Users\\F872D~1.MAR\\AppData\\Local\\Temp\\file.txt", true));
+            	
+                writer = new BufferedWriter(new FileWriter(System.getProperty("user.home") + "\\Desktop\\file.txt", true));
                 writer.append(row + "\n");
                 writer.close();
             } catch (IOException e) {
