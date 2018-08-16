@@ -16,7 +16,7 @@ public class OnTimeApplication implements CommandLineRunner {
         if (args.length == 0)
             return;
 
-        for (int i = 10; i < 13; i++) {
+        for (int i = 11; i < 13; i++) {
             System.out.println("Starting count with " + i + " elements.");
             CustomShiftCalculator calculator = new CustomShiftCalculator(i);
         }
