@@ -13,12 +13,12 @@ public class OnTimeApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        if (args.length == 0)
-            return;
-
-        for (int i = 11; i < 13; i++) {
+//        if (args.length == 0)
+//            return;
+        
+        for (int i = 12; i < 13; i++) {
             System.out.println("Starting count with " + i + " elements.");
-            CustomShiftCalculator calculator = new CustomShiftCalculator(i);
+            Shift2 pippo = new Shift2(i);
         }
     }
 
